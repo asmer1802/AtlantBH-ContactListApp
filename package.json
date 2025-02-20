@@ -1,0 +1,30 @@
+{
+  "name": "atlantbh-contactsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npx playwright install",
+    "smokeUITests": "npx playwright test UITests/ --headed --workers=1 -x",
+    "smokeAPITests": "npx playwright test APITests/ --workers=1 -x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmer1802/AtlantBH-ContactsApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/asmer1802/AtlantBH-ContactsApp/issues"
+  },
+  "homepage": "https://github.com/asmer1802/AtlantBH-ContactsApp#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
+}
