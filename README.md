@@ -42,3 +42,12 @@ The following test cases are covered:
 3. Create contact happy path
 4. Edit contact happy path
 5. Delete contact happy path
+
+## Github action
+
+Tests can be triggered through Github Action in 2 ways:
+
+1. Automatically - tests are scheduled at 8AM UTC (API) and 9AM UTC (UI) every day
+2. Manually - open the repository and navigate to Actions.
+   Click on Run workflow and trigger tests. Once test run is finished, there will be
+   a HTML report created in the run artifacts.

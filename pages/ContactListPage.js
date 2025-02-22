@@ -40,4 +40,28 @@ exports.ContactListPage = class ContactListPage {
   async clickOnLogoutBtn() {
     await this.logoutBtn.click();
   }
+
+  async contactDataIsDisplayedInTable(data) {
+    await expect(
+      this.page.locator(
+        `xpath=//tr[@class= "contactTableBodyRow"]//td[contains(text(), "${data}")]`
+      )
+    ).toBeVisible();
+  }
+
+  async contactDataIsNotDisplayedInTable(data) {
+    await expect(
+      this.page.locator(
+        `xpath=//tr[@class= "contactTableBodyRow"]//td[contains(text(), "${data}")]`
+      )
+    ).not.toBeVisible();
+  }
+
+  async clickOnContactInTable(name) {
+    await this.page
+      .locator(
+        `xpath=//tr[@class= "contactTableBodyRow"]//td[contains(text(), "${name}")]`
+      )
+      .click();
+  }
 };

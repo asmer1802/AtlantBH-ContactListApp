@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "install": "npx playwright install",
-    "smokeUITests": "npx playwright test UITests/ --headed --workers=1 -x",
-    "smokeAPITests": "npx playwright test APITests/ --workers=1 -x"
+    "smokeUITests": "npx playwright test UITests/ --headed",
+    "smokeAPITests": "npx playwright test APITests/"
   },
   "repository": {
     "type": "git",
